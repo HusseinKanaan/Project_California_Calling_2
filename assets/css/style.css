@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "LarishNeueSemibold";
+  src: url("../fonts/Larish Neue Semibold.woff2") format("woff2"), url("../fonts/LarishNeueSemibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: "WorkSans", sans-serif;
+}
+
+.line {
+  margin-top: 7px;
+  width: 50vw;
+  padding: 80px;
+  border-right: solid 2px rgba(213, 212, 212, 0.5294117647);
+}
+
+.pStyle, .logoButtonContainer input, .hero p:nth-of-type(1), .hero p:nth-of-type(2) {
+  color: #d5d4d4;
+  font-size: 1rem;
+}
+
+.hero {
+  color: #fff;
+  padding-top: 45px;
+  width: 90vw;
+  height: auto;
+  margin: auto;
+}
+.hero h1, .hero h2 {
+  font-size: 6rem;
+  text-align: center;
+  font-family: "LarishNeueSemibold", sans-serif;
+}
+.hero h2 {
+  line-height: 29px;
+  padding-bottom: 35px;
+  color: #000;
+  -webkit-text-stroke: 1px rgba(213, 212, 212, 0.5294117647);
+}
+.hero p:nth-of-type(1), .hero p:nth-of-type(2) {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.hero p:nth-of-type(3) {
+  font-size: 6.5rem;
+  font-family: "LarishNeueSemibold", sans-serif;
+  text-align: left;
+  width: 60vw;
+}
+
+.logoButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30vh;
+  padding-bottom: 190px;
+}
+.logoButtonContainer input {
+  padding: 15px 40px;
+  border: solid 2px rgba(213, 212, 212, 0.6941176471);
+  background-color: #000;
+}
+.logoButtonContainer input:hover {
+  opacity: 0.9;
+  color: #000;
+  background-color: #fff;
+  transition: 0.8s;
+}
+
+.imgMapContainer {
+  height: 800px;
+  width: 500px;
+}
+.imgMapContainer img {
+  height: 700px;
+}
+
+.inhalt {
+  padding-left: 5%;
+  margin-top: 170px;
+  /* ------------Page 2------------ */
+}
+.inhalt img {
+  height: 1000px;
+  width: 500px;
+}
+.inhalt p:nth-of-type(even) {
+  color: #fff;
+  font-size: 6.5rem;
+  padding-bottom: 12px;
+  font-family: "LarishNeueSemibold", sans-serif;
+}
+.inhalt p:nth-of-type(odd) {
+  color: #fff;
+  padding-bottom: 12px;
+}
+
+.inhaltFlex {
+  display: flex;
+  gap: 30vh;
+}
+
+main {
+  height: 200vh;
+  background-color: #fff;
+}
+
+/* Image action 1 */
+.allImgSize, .action6 img, .action5 img, .action4 img, .cardConatiner img {
+  width: 260px;
+  height: 180px;
+}
+
+.boxImgAction1 {
+  padding: 0 5% 0 5%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.boxImgAction1 img {
+  width: 330px;
+  height: 250px;
+  margin-top: -80px;
+  position: absolute;
+}
+
+.cardConatiner {
+  display: flex;
+  padding-top: 20vh;
+  height: auto;
+}
+.cardConatiner div, .cardConatiner .action5, .cardConatiner .action4 {
+  max-width: fit-content;
+  display: flex;
+  padding: auto;
+  max-height: fit-content;
+}
+.action2 {
+  padding: 120px 0 0 3.5vw;
+}
+
+.action3 {
+  align-items: center;
+  padding-top: 55vh;
+}
+
+/* -------------Page 3-------------- */
+.action4 {
+  padding-left: 20vw;
+}
+.action5 {
+  padding-right: 15vw;
+  display: flex;
+  justify-content: end;
+}
+.action6 {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  display: flex;
+}
+.action7 {
+  padding-left: 220px;
+  margin-bottom: -70px;
+  display: flex;
+  justify-content: center;
+}
+.action7 img {
+  width: 330px;
+  height: 250px;
+}
+
+.cardText {
+  padding-top: 30vh;
+  margin: 0 auto;
+  max-width: 400px;
+}
+.cardText h2 {
+  font-family: "LarishNeueSemibold", sans-serif;
+  font-size: 4rem;
+  font-weight: normal;
+  padding-right: 50px;
+}
+.cardText p {
+  line-height: 30px;
+}
+
+.cardText2 {
+  margin: 2vh 0 0 10vw;
+  max-width: 499px;
+}
+.cardText2 p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.Page3 {
+  height: 100vh;
+  background-color: #000;
+}
+
+.heading3 {
+  display: flex;
+  color: #fff;
+  font-family: "LarishNeueSemibold", sans-serif;
+}
+.heading3 div:nth-last-of-type(1), .heading3 .action4:nth-last-of-type(1), .heading3 .action5:nth-last-of-type(1) {
+  padding-right: 700px;
+}
+.heading3 h3 {
+  font-size: 3.5rem;
+}
+.heading3 p {
+  max-width: 30%;
+}
+
+/*# sourceMappingURL=style.css.map */

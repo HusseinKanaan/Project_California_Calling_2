@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'LarishNeueSemibold';
+    src: url('../fonts/Larish\ Neue\ Semibold.woff2') format('woff2'),
+        url('../fonts/LarishNeueSemibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import './mixin.scss';
+@import './variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// -----General Styles---------
+
+body {
+    background-color: $primaryblack-color;
+    font-family: $primary-font;
+}
+
+
+.line {
+    margin-top: 7px;
+    width: 50vw;
+    padding: 80px;
+    border-right: solid 2px $element-color;
+}
+
+
+.pStyle {
+    color: #d5d4d4;
+    font-size: $fz;
+}
+
+// header Page 1    
+.hero {
+    color: $primarywhite-color;
+    padding-top: 45px;
+    width: 90vw;
+    height: auto;
+    margin: auto;
+
+    h1 {
+        font-size: 6rem;
+        text-align: center;
+        font-family: $import-font;
+    }
+
+    h2 {
+        @extend h1;
+        line-height: 29px;
+        padding-bottom: 35px;
+        color: $primaryblack-color;
+        -webkit-text-stroke: 1px $element-color;
+    }
+
+    p {
+        &:nth-of-type(1) {
+            @extend .pStyle;
+            text-align: center;
+            padding-bottom: 5px;
+        }
+
+        &:nth-of-type(2) {
+            @extend :nth-of-type(1);
+        }
+
+        &:nth-of-type(3) {
+            font-size: 6.5rem;
+            font-family: $import-font;
+            text-align: left;
+            width: 60vw;
+        }
+    }
+}
+
+//Div für logo und Button
+.logoButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30vh;
+    padding-bottom: 190px;
+
+    input {
+        padding: 15px 40px;
+        @extend .pStyle;
+        border: solid 2px #d5d4d4b1;
+        background-color: $primaryblack-color;
+
+        &:hover {
+            opacity: 0.9;
+            color: $primaryblack-color;
+            background-color: $primarywhite-color;
+            transition: 0.8s;
+        }
+    }
+}
+
+.imgMapContainer {
+    height: 800px;
+    width: 500px;
+
+    img {
+        height: 700px;
+    }
+}
+
+.inhalt {
+    padding-left: 5%;
+    margin-top: 170px;
+
+    img {
+        height: 1000px;
+        width: 500px;
+    }
+
+    /* ------------Page 2------------ */
+    p {
+
+        &:nth-of-type(even) {
+            color: $primarywhite-color;
+            font-size: 6.5rem;
+            padding-bottom: 12px;
+            font-family: $import-font;
+
+        }
+
+        &:nth-of-type(odd) {
+            color: $primarywhite-color;
+            padding-bottom: 12px;
+        }
+    }
+}
+
+.inhaltFlex {
+    display: flex;
+    gap: 30vh;
+}
+
+main {
+    height: 200vh;
+    background-color: #fff;
+}
+
+/* Image action 1 */
+.allImgSize {
+    width: 260px;
+    height: 180px;
+}
+
+
+.boxImgAction1 {
+    padding: 0 5% 0 5%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+        width: 330px;
+        height: 250px;
+        margin-top: -80px;
+        position: absolute;
+    }
+}
+
+
+.cardConatiner {
+    display: flex;
+    padding-top: 20vh;
+    height: auto;
+
+    div {
+        max-width: fit-content;
+        display: flex;
+        padding: auto;
+        max-height: fit-content;
+    }
+
+    img {
+        @extend .allImgSize;
+    }
+}
+
+
+.action2 {
+    padding: 120px 0 0 3.5vw;
+}
+
+
+.action3 {
+    align-items: center;
+    padding-top: 55vh;
+}
+/* -------------Page 3-------------- */
+
+.action4 {
+    padding-left: 20vw;
+    @extend div;
+
+    img {
+        @extend .allImgSize;
+    }
+}
+
+
+.action5 {
+    padding-right: 15vw;
+    @extend div;
+    display: flex;
+    justify-content: end;
+
+    img {
+        @extend .allImgSize;
+    }
+}
+
+
+.action6 {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    display: flex;
+
+    img {
+        @extend .allImgSize;
+    }
+}
+
+.action7 {
+    padding-left: 220px;
+    margin-bottom: -70px;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 330px;
+        height: 250px;
+    }
+}
+
+.cardText {
+    padding-top: 30vh;
+    margin: 0 auto;
+    max-width: 400px;
+
+    h2 {
+        font-family: $import-font;
+        font-size: 4rem;
+        font-weight: normal;
+        padding-right: 50px;
+    }
+
+    p {
+        line-height: 30px;
+    }
+}
+
+.cardText2 {
+
+    margin: 2vh 0 0 10vw;
+    max-width: 499px;
+
+    p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+.Page3{
+    height: 100vh;
+    background-color: #000;
+}
+
+.heading3{
+    display: flex;
+    color: $primarywhite-color;
+    font-family: $import-font;
+    div{
+        &:nth-last-of-type(1){
+            padding-right: 700px;
+        }
+    }
+    h3{
+        font-size: 3.5rem;
+        
+    }
+    p{
+        max-width: 30%;
+    }
+}
